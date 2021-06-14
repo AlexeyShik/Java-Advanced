@@ -85,7 +85,6 @@ public class TextStatistics {
         private final Locale locale;
         final NumberFormat numberFormat;
         final NumberFormat currencyFormat;
-        // :NOTE: Массив
         final List<DateFormat> dateFormats;
 
         public Parser(final String text, final Locale locale) {
@@ -314,7 +313,6 @@ public class TextStatistics {
         }
 
         private String getAndFormat(final String name, final String ending, final String... options) {
-            // :NOTE: Конкатенация строк в локализованом контексте - fixed
             final String[] nameOption = new String[]{bundle.getString(name)};
             return Arrays.stream(options).anyMatch(Objects::isNull)
                     ? applyAndFormat("notFound", nameOption)
