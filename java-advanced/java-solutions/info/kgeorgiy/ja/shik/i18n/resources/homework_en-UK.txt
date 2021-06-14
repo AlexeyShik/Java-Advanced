@@ -1,0 +1,53 @@
+Homework assignment 13. Text statistics
+Create a TextStatistics application that analyzes texts in different languages.
+Command line arguments: text locale, output locale, text file, report file.
+Supported text locales: all locales available in the system.
+Supported output locales: Russian and English.
+The files are UTF-8 encoded.
+Statistics should be calculated in the following categories: sentences, words, numbers, money, dates.
+The following statistics should be collected for each category: number of occurrences, number of different values, minimum value, maximum value, minimum length, maximum length, average value/length.
+Sample report:
+File to analyze "input.txt"
+Summary statistics
+Number of offers: 43.
+Number of words: 275.
+Number of numbers: 40.
+Number of amounts: 3.
+Number of dates: 3.
+Sentence statistics
+Number of sentences: 43 (43 different).
+Minimum sentence: "Command line arguments: text locale, output locale, text file, report file.".
+Maximum sentence: "Number of numbers: 40.".
+Minimum sentence length: 13 ("Number of dates: 3.").
+Maximum sentence length: 211 ("GK: if you put a real sentence here, the process will not converge").
+Average sentence length: 55.465.
+Statistics by words
+Number of words: 275 (157 different).
+Minimum word: "GK".
+Maximum word: "languages".
+Minimum word length: 1 ("c").
+Maximum word length: 14 ("TextStatistics").
+Average word length: 6.72.
+Statistics by numbers
+Number of numbers: 40 (24 different).
+Minimum number: -12345.0.
+Maximum number: 12345.67.
+Average number: 207.676.
+Statistics on amounts of money
+Number of sums: 3 (3 different).
+Minimum amount: 100.00 ₽.
+Maximum amount: 345.67 ₽.
+Average amount: 222.83 ₽.
+Statistics by date
+Number of dates: 3 (3 different).
+Minimum date: May 22, 2021.
+Maximum date: June 8, 2021.
+Average date: May 30, 2021.
+You can count on the entire text being stored in memory.
+When completing the task, you should pay attention to:
+Decomposition of messages for localization
+Matching messages by gender and number
+Write tests that test the above behavior of the application.
+To implement the tests, we recommend using JUnit (Tutorial). Many usage examples can be found in the tests.
+If you are familiar with another test framework (for example, TestNG), you can use it.
+You can't use self-written frameworks and tests that run through main.
