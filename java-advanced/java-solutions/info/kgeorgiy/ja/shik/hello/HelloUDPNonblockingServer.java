@@ -80,7 +80,6 @@ public class HelloUDPNonblockingServer implements HelloServer {
             selectorChannel.bind(new InetSocketAddress(port));
             selectorChannel.register(selector, SelectionKey.OP_READ, new ChannelInfo(threads, selectorChannel));
 
-            // :NOTE: Два executor - fixed
             service = Executors.newFixedThreadPool(threads + 1);
 
             service.submit(this::run);
@@ -147,7 +146,7 @@ public class HelloUDPNonblockingServer implements HelloServer {
 
         private void setKeyOpsOr(final int ops) {
             selectorChannel.keyFor(selector).interestOpsOr(ops);
-            selector.wakeup(); // :NOTE: Слишком часто - fixed
+            selector.wakeup();
         }
 
         private class BufferAndAddress {
