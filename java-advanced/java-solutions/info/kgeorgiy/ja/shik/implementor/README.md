@@ -21,8 +21,8 @@
 
 6. Данное домашнее задание сдается только вместе с предыдущим. Предыдущее домашнее задание отдельно сдать будет нельзя.  
 **Сложный вариант**. Решение должно быть модуляризовано.  
-[ссылка на скрипты](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/scripts). 
-[ссылка на модуль](https://github.com/AlexeyShik/Java-Advanced/blob/main/java-advanced/java-solutions/module-info.java). 
+[ссылка на скрипты](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/scripts)  
+[ссылка на модуль](https://github.com/AlexeyShik/Java-Advanced/blob/main/java-advanced/java-solutions/module-info.java)  
 ## Домашнее задание 6. Javadoc
 1. Документируйте класс Implementor и сопутствующие классы с применением Javadoc.  
 * Должны быть документированы все классы и все члены классов, в том числе `private`.  
