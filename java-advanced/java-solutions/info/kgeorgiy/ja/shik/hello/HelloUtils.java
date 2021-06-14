@@ -18,7 +18,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class HelloUtils {
-    // :NOTE: Переиспользование - fixed
     static final Pattern pattern = Pattern.compile("\\D*(\\d+)\\D*(\\d+)\\D*");
     static final int TIMEOUT = 50;
     static final int MAX_PORT_VALUE = 0xFFFF;
