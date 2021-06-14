@@ -39,7 +39,6 @@ public class HelloUDPNonblockingClient implements HelloClient {
                 final DatagramChannel channel = DatagramChannel.open();
                 channels.add(channel);
                 channel.configureBlocking(false);
-                // :NOTE: Индекс
                 channel.register(selector, SelectionKey.OP_WRITE, i);
                 buffers[i] = HelloUtils.allocate(channel);
             }
