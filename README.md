@@ -1,7 +1,7 @@
 # Java-Advanced
 Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-advanced/)
 
-## Домашнее задание 1. Обход файлов
+## Домашнее задание 1. [Обход файлов](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/walk)
 1. Разработайте класс `Walk`, осуществляющий подсчет хеш-сумм файлов.  
 1.1. Формат запуска. 
 `java Walk` <входной файл> <выходной файл>. 
@@ -67,7 +67,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 * Весь код должен находиться в пакете info.kgeorgiy.ja.фамилия.walk.  
 * Тесты к домашним заданиям. 
 
-## Домашнее задание 2. Множество на массиве
+## Домашнее задание 2. [Множество на массиве](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/arrayset)
 1. Разработайте класс `ArraySet`, реализующие неизменяемое упорядоченное множество.  
 * Класс `ArraySet` должен реализовывать интерфейс `SortedSet` (простой вариант) или `NavigableSet` (сложный вариант).  
 * Все операции над множествами должны производиться с максимально возможной асимптотической эффективностью.  
@@ -75,7 +75,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 2. При выполнении задания следует обратить внимание на:  
 * Применение стандартных коллекций.  
 * Избавление от повторяющегося кода.  
-## Домашнее задание 3. Студенты
+## Домашнее задание 3. [Студенты](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/student)
 1. Разработайте класс `StudentDB`, осуществляющий поиск по базе данных студентов.  
 * Класс `StudentDB` должен реализовывать интерфейс `StudentQuery` (простой вариант) или `GroupQuery` (сложный вариант).  
 * Каждый метод должен состоять из ровно одного оператора. При этом длинные операторы надо разбивать на несколько строк.  
@@ -83,7 +83,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 2. При выполнении задания следует обратить внимание на:  
 * применение лямбда-выражений и потоков;  
 * избавление от повторяющегося кода.  
-## Домашнее задание 4. Implementor
+## Домашнее задание 4. [Implementor](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/implementor)
 1. Реализуйте класс `Implementor`, который будет генерировать реализации классов и интерфейсов.  
 * Аргумент командной строки: полное имя класса/интерфейса, для которого требуется сгенерировать реализацию.  
 * В результате работы должен быть сгенерирован java-код класса с суффиксом Impl, расширяющий (реализующий) указанный класс (интерфейс).  
@@ -95,7 +95,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 * _Простой_ — `Implementor` должен уметь реализовывать только интерфейсы (но не классы). Поддержка generics не требуется.  
 * _Сложный_ — `Implementor` должен уметь реализовывать и классы, и интерфейсы. Поддержка generics не требуется.  
 * _Бонусный_ — `Implementor` должен уметь реализовывать generic-классы и интерфейсы. Сгенерированный код должен иметь корректные параметры типов и не порождать UncheckedWarning.  
-## Домашнее задание 5. Jar Implementor
+## Домашнее задание 5. [Jar Implementor](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/implementor)
 1. Создайте .jar-файл, содержащий скомпилированный `Implementor` и сопутствующие классы.  
 2. Созданный .jar-файл должен запускаться командой java -jar.  
 3. Запускаемый .jar-файл должен принимать те же аргументы командной строки, что и класс `Implementor`.  
@@ -106,7 +106,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 
 6. Данное домашнее задание сдается только вместе с предыдущим. Предыдущее домашнее задание отдельно сдать будет нельзя.  
 **Сложный вариант**. Решение должно быть модуляризовано.  
-## Домашнее задание 6. Javadoc
+## Домашнее задание 6. [Javadoc](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/implementor)
 1. Документируйте класс Implementor и сопутствующие классы с применением Javadoc.  
 * Должны быть документированы все классы и все члены классов, в том числе `private`.  
 * Документация должна генерироваться без предупреждений.  
@@ -117,7 +117,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 * сгенерированная документация.  
 
 3. Данное домашнее задание сдается только вместе с предыдущим. Предыдущее домашнее задание отдельно сдать будет нельзя.  
-## Домашнее задание 7. Итеративный параллелизм
+## Домашнее задание 7. [Итеративный параллелизм](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/concurrent)
 1. Реализуйте класс `IterativeParallelism`, который будет обрабатывать списки в несколько потоков.  
 2. В простом варианте должны быть реализованы следующие методы:  
 * `minimum(threads, list, comparator)` — первый минимум;  
@@ -134,7 +134,7 @@ Solutions for [Java Advanced course](https://www.kgeorgiy.info/courses/java-adva
 5. Не следует рассчитывать на то, что переданные компараторы, предикаты и функции работают быстро.  
 6. При выполнении задания **нельзя** использовать _Concurrency Utilities_.  
 7. Рекомендуется подумать, какое отношение к заданию имеют [моноиды](https://en.wikipedia.org/wiki/Monoid).  
-## Домашнее задание 8. Параллельный запуск
+## Домашнее задание 8. [Параллельный запуск](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/concurrent)
 1. Напишите класс `ParallelMapperImpl`, реализующий интерфейс `ParallelMapper`.  
 ```java
 public interface ParallelMapper extends AutoCloseable {
@@ -158,7 +158,7 @@ public interface ParallelMapper extends AutoCloseable {
 * Методы класса должны делить работу на threads фрагментов и исполнять их при помощи `ParallelMapper`.  
 * При наличии `ParallelMapper` сам `IterativeParallelism` новые потоки создавать не должен.  
 * Должна быть возможность одновременного запуска и работы нескольких клиентов, использующих один `ParallelMapper`.  
-## Домашнее задание 9. Web Crawler
+## Домашнее задание 9. [Web Crawler](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/crawler)
 Напишите потокобезопасный класс `WebCrawler`, который будет рекурсивно обходить сайты.  
 1. Класс `WebCrawler` должен иметь конструктор. 
 ```java
@@ -207,7 +207,7 @@ public interface Document {
 * _Простая_ — не требуется учитывать ограничения на число одновременных закачек с одного хоста (`perHost >= downloaders`).  
 * _Полная_ — требуется учитывать все ограничения.  
 * _Бонусная_ — сделать параллельный обод в ширину.  
-## Домашнее задание 10. HelloUDP
+## Домашнее задание 10. [HelloUDP](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/hello)
 1. Реализуйте клиент и сервер, взаимодействующие по UDP.  
 2. Класс `HelloUDPClient` должен отправлять запросы на сервер, принимать результаты и выводить их на консоль.  
 * Аргументы командной строки:  
@@ -224,7 +224,7 @@ public interface Document {
 3.2. число рабочих потоков, которые будут обрабатывать запросы.  
 * Ответом на запрос должно быть `Hello, <текст запроса>`.  
 * Если сервер не успевает обрабатывать запросы, прием запросов может быть временно приостановлен.  
-## Домашнее задание 11. Физические лица
+## Домашнее задание 11. [Физические лица](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/bank)
 1. Добавьте к банковскому приложению возможность работы с физическими лицами.  
 * У физического лица (`Person`) можно запросить имя, фамилию и номер паспорта.  
 * Локальные физические лица (`LocalPerson`) должны передаваться при помощи механизма сериализации.  
@@ -250,14 +250,14 @@ public interface Document {
 * Создайте класс `BankTests`, запускающий тесты.
 * Создайте скрипт, запускающий `BankTests` и возвращающий код (статус) 0 в случае успеха и 1 в случае неудачи.
 * Создайте скрипт, запускающий тесты с использованием стандартного подхода для вашего тестового фреймворка. Код возврата должен быть как в предыдущем пункте.
-## Домашнее задание 12. HelloNonblockingUDP
+## Домашнее задание 12. [HelloNonblockingUDP](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/hello)
 1. Реализуйте клиент и сервер, взаимодействующие по UDP, используя только неблокирующий ввод-вывод.  
 2. Класс `HelloUDPNonblockingClient` должен иметь функциональность аналогичную `HelloUDPClient`, но без создания новых потоков.  
 3. Класс `HelloUDPNonblockingServer` должен иметь функциональность аналогичную `HelloUDPServer`, но все операции с сокетом должны производиться в одном потоке.  
 4. В реализации не должно быть активных ожиданий, в том числе через `Selector`.  
 5. Обратите внимание на выделение общего кода старой и новой реализации.  
 6. _Бонусный вариант_. Клиент и сервер могут перед началом работы выделить O(число потоков) памяти. Выделять дополнительную память во время работы запрещено.  
-## Домашнее задание 13. Статистика текста
+## Домашнее задание 13. [Статистика текста](https://github.com/AlexeyShik/Java-Advanced/tree/main/java-advanced/java-solutions/info/kgeorgiy/ja/shik/i18n)
 1. Создайте приложение `TextStatistics`, анализирующее тексты на различных языках.  
 * Аргументы командной строки:  
 1.1. локаль текста,  
